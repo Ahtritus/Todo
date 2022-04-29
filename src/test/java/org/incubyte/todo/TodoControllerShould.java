@@ -33,4 +33,33 @@ class TodoControllerShould {
 
     verify(todoService).findById(1L);
   }
+
+  @Test
+  void call_service_to_get_all_the_todos() {
+    TodoController todoController = new TodoController(todoService);
+
+    Iterable<Todo> todos =  todoController.getAllTodos();
+
+    verify(todoService).getAllTodos();
+  }
+
+  @Test
+  void get_all_open_todos()
+  {
+    TodoController todoController = new TodoController(todoService);
+
+    Iterable<Todo> todos =  todoController.getAllOpenTodos();
+
+    verify(todoService).getAllTodosByFilter("open");
+  }
+
+  @Test
+  void get_all_closed_todos()
+  {
+    TodoController todoController = new TodoController(todoService);
+
+    Iterable<Todo> todos =  todoController.getAllCloseTodos();
+
+    verify(todoService).getAllTodosByFilter("closed");
+  }
 }
