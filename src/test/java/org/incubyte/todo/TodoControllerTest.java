@@ -22,7 +22,7 @@ class TodoControllerTest {
 
     //Arrange
     Todo todo = new Todo();
-    todo.setDescription("Remember the Chicken");
+    todo.setDescription("Remember the dummy todo description");
 
     //Acted
     Todo savedTodo = httpClient.toBlocking()
@@ -44,5 +44,7 @@ class TodoControllerTest {
     assertThat(retrievedTodo.getDescription()).isEqualTo(savedTodo.getDescription());
     assertThat(retrievedTodo.isDone()).isEqualTo(savedTodo.isDone());
   }
+
+
 
 }
