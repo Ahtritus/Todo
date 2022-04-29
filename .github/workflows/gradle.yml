@@ -34,7 +34,7 @@ jobs:
           arguments: build
   publish-test-results:
     name: "Publish Unit Tests Results"
-    needs: build-and-test
+    needs: build
     runs-on: ubuntu-latest
     if: always()
     steps:
