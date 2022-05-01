@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.incubyte.todo.TodoControllerShould" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-04-29T08:40:37" hostname="SBDEV" time="0.695">
+  <properties/>
+  <testcase name="return_saved_todo_by_id()" classname="org.incubyte.todo.TodoControllerShould" time="0.68"/>
+  <testcase name="call_save_method_from_service()" classname="org.incubyte.todo.TodoControllerShould" time="0.002"/>
+  <testcase name="call_service_to_get_all_the_todos()" classname="org.incubyte.todo.TodoControllerShould" time="0.002"/>
+  <testcase name="get_all_closed_todos()" classname="org.incubyte.todo.TodoControllerShould" time="0.001"/>
+  <testcase name="get_all_open_todos()" classname="org.incubyte.todo.TodoControllerShould" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
