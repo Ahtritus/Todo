@@ -1,0 +1,12 @@
+[ {
+  "name" : "org.incubyte.todo.Todo[]"
+}, {
+  "name" : "org.incubyte.todo.Todo",
+  "allDeclaredFields" : true,
+  "allPublicMethods" : true,
+  "methods" : [ {
+    "name" : "<init>",
+    "parameterTypes" : [ ]
+  } ],
+  "allDeclaredConstructors" : true
+} ]
